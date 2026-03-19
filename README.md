@@ -1,6 +1,6 @@
 # Russian Crime Victimization Survey (RCVS)
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)     [![Dataverse](https://img.shields.io/badge/Dataverse_DOI-10.7910/DVN/ISMDV5-firebrick)](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ISMDV5)     ![R](https://img.shields.io/badge/R-4.0+-blue)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)  [![SSRN](https://img.shields.io/badge/SSRN-6418058-blue?logo=ssrn)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6418058)      [![Dataverse](https://img.shields.io/badge/Dataverse_DOI-10.7910/DVN/ISMDV5-firebrick)](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ISMDV5)     ![R](https://img.shields.io/badge/R-4.0+-blue)
 
 This replication package accompanies [the paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6418058). It documents steps to prepare a pooled dataset, and produces figures in the paper about RCVS.
 
