@@ -192,4 +192,4 @@ Please cite as:
 
 ## Contacts
 
-Ruslan Kuchakov, [rkuchakov@eu.spb.ru](mailto:rkuchakov@eu.spb.ru){.email}
+Ruslan Kuchakov, [rkuchakov@eu.spb.ru](mailto:rkuchakov@eu.spb.ru)
