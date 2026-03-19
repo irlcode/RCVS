@@ -1,0 +1,156 @@
+Название переменной;Значение переменной;Variable label;Статус переменной в RCVS-18;Статус переменной в RCVS-21;Статус переменной в RCVS-24
+ID;Идентификатор респондента; Respondent's ID ;Y;Y;Y
+IVDur;Длительность интервью (сек.);Interview length (in seconds);Y;Y;Y
+Q2003;Тип населенного пункта;Type of settlement;Y;Y;Y
+Q2001;Федеральный округ;Federal district;Y;Y;Y
+Q1005;Регион;Region;Y;Y;Y
+Q1;Пол;Sex (coded by voice) ;Y;Y;Y
+Q2;Скажите, пожалуйста, сколько вам полных лет?;Please tell me how old you are? ;Y;Y;Y
+Q75;Вспомните, пожалуйста, было ли такое, что вас обокрали, вас побили, вам угрожали, вы стали жертвой насилия, мошенничества или других преступлений в России за последние 5 лет ?;Please recall whether you were robbed, assaulted, threatened, or were a victim of violence, fraud, or other crimes in Russia during the last 5 years? ;Y;Y;F
+Q75_1N;Сколько всего подобных случаев произошло с Вами за последние 5 лет?;How many such occasions have happened to you during the last 5 years? ;Y;Y;F
+Q751;Вспомните, пожалуйста, было ли такое, что вас обокрали, вас побили, вам угрожали, вы стали жертвой насилия, мошенничества или других преступлений в России с июня 2021 года?;Please recall whether you have been robbed, assaulted, threatened, or become a victim of violence, fraud, or other crimes in Russia since June, 2021? ;N;N;Y
+Q751_1N;Сколько всего подобных случаев произошло с Вами за это время?;How many such occasions have happened to you since then? ;N;N;Y
+Q76;А за последние 12 месяцев  такие случаи бывали?;Have this happened over the last 12 months? ;Y;Y;F
+Q76_1N;Сколько всего подобных случаев произошло с Вами за последние 12 месяцев?;How many such occasions have happened to you during the last 12 months? ;Y;Y;F
+Q5;Каким было последнее преступление?;What was the last crime? I will ask several follow-up questions about it. ;Y;Y;Q
+Q66;Можно ли сказать, что в Вашем случае преступление произошло через телефон / интернет (например, злоумышленники Вам звонили или писали с просьбой перевести им деньги) или к Вашему случаю это неприменимо?;In your case, can it be said that the crime occurred via the telephone/internet (for example, the perpetrators called or wrote to you asking you to transfer money to them) or is this not applicable to your case? ;Y;N;N
+Q661;Можно ли сказать, что в Вашем случае преступление произошло через телефонный звонок?;In your case, can it be said that the offence occurred through a phone call? ;N;Y;QO
+Q662;Можно ли сказать, что преступление произошло через интернет?;In your case, can it be said that the offence took place via the internet? ;N;Y;Y
+Q663;В случае этого преступления у вас взломали или украли аккаунт в социальных сетях или на других сайтах?;In this case of a crime, was your account hacked or stolen on social media or other websites? ;N;Y;QO
+Q14;Если возможно указать, то где конкретно это произошло? Например, в магазине, на работе, на улице, у знакомых и т.д.;If possible, could you specify where exactly it happened? For example, in a store, at work, on the street, at a friend's house, etc. ;Y;Y;OF
+Q1414;Где Вы в этот момент находились? (преступление через телефон или Интернет);Where were you at that moment? (Crime committed via telephone or internet) ;Y;Y;N
+Q18;Были ли в этот момент рядом с вами другие люди?;Was someone around you when the crime was happening? ;Y;Y;Y
+Q15;Это произошло в светлое или темное время суток?;Did the crime happened in the daylight or not? ;Y;Y;F
+Q16;В каком примерно месяце это было?;What month was it? ;Y;Y;Y
+Q77;А не могли бы примерно вспомнить, какое это было время года?;What time of year was it? ;Y;Y;F
+Q17;Можно ли сказать, что к преступлению привела Ваша оплошность?;Can you say that the crime happened due to your negligence? ;Y;Y;Y
+Q19_1;Материальный ущерб: Наличные деньги;Can we say that you suffered material damage as a result of this event?: Cash ;Y;Y;Y
+Q19_2;Материальный ущерб: Безналичные деньги (деньги с карты, счета и т.п.); Can we say that you suffered material damage as a result of this event?: Money from bank cards and accounts etc. ;Y;Y;Y
+Q19_3;Материальный ущерб: Банковские карты и т.п.;Can we say that you suffered material damage as a result of this event?: Bank cards etc. ;Y;Y;Y
+Q19_4;Материальный ущерб: Документы (паспорт, права);Can we say that you suffered material damage as a result of this event?: Documents (such as passport) ;Y;Y;Y
+Q19_5;Материальный ущерб: Техника (телефон, пылесос, инструменты);Can we say that you suffered material damage as a result of this event?: Appliances (phone, hoover, tools). ;Y;Y;Y
+Q19_6;Материальный ущерб: Драгоценности и украшения;Can we say that you suffered material damage as a result of this event?: Jewellery and ornaments). ;Y;Y;Y
+Q19_7;Материальный ущерб: Транспортное средство (в т.ч. и угон на запчасти);Can we say that you suffered material damage as a result of this event?: Car and other transport (incl. theft and stolen repair parts) ;Y;Y;Y
+Q19_8;Материальный ущерб: Недвижимость (квартира, дача и составляющие – окна, двери);Can we say that you suffered material damage as a result of this event?: Real estate (apartments, dacha, car garage, etc, and its parts тАФ windows, doors) ;Y;N;N
+Q19_9;Материальный ущерб: Одежда;Can we say that you suffered material damage as a result of this event?: Clothes ;Y;N;N
+Q19_88;Материальный ущерб: Нет;Can we say that you suffered material damage as a result of this event?: No ;Y;Y;Y
+Q19_998;Материальный ущерб: Другое;Can we say that you suffered material damage as a result of this event?: Other ;N;N;Y
+Q19_999;Материальный ущерб: Затрудняюсь ответить;Can we say that you suffered material damage as a result of this event?: Difficult to say ;Y;Y;Y
+Q67_1;Завладел другой человек: Деньги наличные;Another person took possession of: Cash ;Y;N;N
+Q67_2;Завладел другой человек: Деньги с карты, счета и т.п.;Another person took possession of: Money from bank cards and accounts etc. ;Y;N;N
+Q67_3;Завладел другой человек: Банковские карты и т.п.;Another person took possession of: Bank cards etc. ;Y;N;N
+Q67_4;Завладел другой человек: Документы (паспорт);Another person took possession of: Documents (such as passport) ;Y;N;N
+Q67_5;Завладел другой человек: Техника (например, телефон, ноутбук, пылесос, инструменты и т.п.);Another person took possession of: Appliances (phone, hoover, tools) ;Y;N;N
+Q67_6;Завладел другой человек: Драгоценности и украшения;Another person took possession of: Jewellery and ornaments ;Y;N;N
+Q67_7;Завладел другой человек: Транспортное средство (в том числе угон и запчасти);Another person took possession of: Car and other transport (incl. theft and stolen repair parts) ;Y;N;N
+Q67_8;Завладел другой человек: Недвижимость (квартира, дача, гараж и т.п. и составляющие — окна, двери);Another person took possession of: Real estate Real estate (apartments, dacha, car garage, etc, and its parts тАФ windows, doors) ;Y;N;N
+Q67_9;Завладел другой человек: Одежда;Another person took possession of: Clothes ;Y;N;N
+Q67_88;Завладел другой человек: Нет;Another person took possession of: No ;Y;N;N
+Q67_999;Завладел другой человек: Затрудняюсь ответить;Another person took possession of: Difficult to say ;Y;N;N
+Q20_1;Уничтожено или повреждено: Деньги наличные;Destroyed or damaged: Cash ;Y;N;N
+Q20_2;Уничтожено или повреждено: Деньги с карты, счета и т.п.;Destroyed or damaged: Money from bank cards and accounts etc. ;Y;N;N
+Q20_3;Уничтожено или повреждено: Банковские карты и т.п.;Destroyed or damaged: Bank cards etc. ;Y;N;N
+Q20_4;Уничтожено или повреждено: Документы (паспорт);Destroyed or damaged: Documents (such as passport) ;Y;N;N
+Q20_5;Уничтожено или повреждено: Техника (например, телефон, ноутбук, пылесос, инструменты и т.п.);Destroyed or damaged: Appliances (phone, hoover, tools) ;Y;N;N
+Q20_6;Уничтожено или повреждено: Драгоценности и украшения;Destroyed or damaged: Jewellery and ornaments ;Y;N;N
+Q20_7;Уничтожено или повреждено: Транспортное средство (в том числе угон и запчасти);Destroyed or damaged: Car and other transport (incl. theft and stolen repair parts) ;Y;N;N
+Q20_8;Уничтожено или повреждено: Недвижимость (квартира, дача, гараж и т.п. и составляющие — окна, двери);Destroyed or damaged: Real estate Real estate (apartments, dacha, car garage, etc, and its parts тАФ windows, doors) ;Y;N;N
+Q20_9;Уничтожено или повреждено: Одежда;Destroyed or damaged: Clothes ;Y;N;N
+Q20_88;Уничтожено или повреждено: Нет;Destroyed or damaged: No ;Y;N;N
+Q20_999;Уничтожено или повреждено: Затрудняюсь ответить;Destroyed or damaged: Difficult to say ;Y;N;N
+Q21;Какова была примерная сумма материального ущерба в рублях?;What was the approximate amount of property damage in roubles? ;Y;Y;Y
+Q21_1N;Какова была примерная сумма материального ущерба в рублях? (Число);Approximate amount of property damage in roubles ;Y;Y;Y
+Q221;Скажите, ваше имущество было повреждено/уничтожено или им просто завладел другой человек?;Was your property damaged/destroyed or did another person just take possession of it? ;N;Y;F
+Q22;Можно ли сказать, что вас обманули или ввели в заблуждение?;Were you deceived? ;Y;Y;Y
+Q23;Угрожали ли вам испортить или уничтожить имущество?;Did they threaten to damage your property? ;Y;Y;Q
+Q24;Было ли к вам применено физическое насилие?;Did you experience physical violence? ;Y;Y;F
+Q25_1;Использовалось ли что-либо в качестве оружия? Нет;Did they use something as a weapon? If they did, what was that? No ;Y;Y;F
+Q25_2;Использовалось ли что-либо в качестве оружия? Да, огнестрельное оружие или его аналоги;Did they use something as a weapon? If they did, what was that? Yes, guns and its analogs ;Y;Y;F
+Q25_3;Использовалось ли что-либо в качестве оружия? Да, холодное оружие, нож или что-то подобное;Did they use something as a weapon? If they did, what was that? Yes, cold steel arms, a knife, or analogs ;Y;Y;F
+Q25_4;Использовалось ли что-либо в качестве оружия? Да, другое оружие (дубины и другое импровизированное оружие);Did they use something as a weapon? If they did, what was that? Yes, other kinds of weapon (bats and other improvised weapons);N;Y;N
+Q25_998;Использовалось ли что-либо в качестве оружия? Другое; Did they use something as a weapon? If they did, what was that? Other ;N;N;Y
+Q25_999;Использовалось ли что-либо в качестве оружия? Затрудняюсь ответить; Did they use something as a weapon? If they did, what was that? Difficult to say ;N;N;Y
+Q26;Был ли вам причинен какой-либо физический ущерб, телесные повреждения? Если да, то что именно?;Were you physically hurt? If you were, what was the severity?;Y;Y;F
+Q30;Был ли у вас риск погибнуть в результате этого физического вреда?;Could you die due to the assault? ;Y;Y;QF
+Q27;Нуждались ли вы в медицинской помощи?;Did you need medical help? ;Y;Y;F
+Q28;Обращались ли вы в медицинское учреждение?;Did you go to the medical facility? ;Y;Y;F
+Q29;Получили ли вы в результате этого случая инвалидность?;Were you permanently physically disabled due to the assault? ;Y;Y;F
+Q31;Оказывали ли вы сопротивление преступнику?;Did you resist the criminal? ;Y;Y;F
+Q33;Угрожали ли вам в этой ситуации физическим насилием?;Did they threaten to physically hurt you? ;Y;Y;F
+Q34;Угрожали ли вам оружием?;Did they threaten you with a weapon? ;Y;Y;Y
+Q32;Как вы думаете, могли быть у злоумышленника сексуальные мотивы?;Do you think the criminal had sexual motives? ;Y;Y;Q
+Q36;Были ли Вы в той ситуации жертвой ДТП?;Were you a victim of a traffic accident in that case? ;Y;N;N
+Q37;Были ли Вы в той ситуации жертвой чьей-то халатности?;Were you a victim of someone's negligence in that case? ;Y;N;N
+Q6;В момент преступления Вы видели злоумышленника или разговаривали с ним?;Did you talk to the criminal during the crime? ;Y;Y;Q
+Q611;В момент преступления вы видели злоумышленника?;Did you see to the criminal during the crime? ;N;N;Y
+Q7;Злоумышленник был один?;Was the criminal alone? ;Y;Y;F
+Q8;Злоумышленник был мужчина или женщина?;Was the criminal male or female? ;Y;Y;Y
+Q9;Были ли вы знакомы со злоумышленником?;Did you meet the criminal before the crime? ;Y;Y;F
+Q10;Кем злоумышленник Вам приходился?;What was the relationship between you and the criminal? ;Y;Y;OF
+Q11;Можно ли сказать, что вы находились в зависимом положении от преступника (он был начальником, основным кормильцем или старшим родственником)?;Were you dependent on the criminal (he or she was a boss, a breadwinner, or a senior relative)? ;Y;Y;F
+Q12;Можно ли сказать, что преступник был сотрудником правоохранительных органов или при исполнении служебных обязанностей?;Can it be said that the criminal was a law enforcement officer or on official duty? ;Y;Y;N
+Q13;Был ли преступник или кто-нибудь из преступников в состоянии алкогольного или наркотического опьянения?;Was the criminal (or one of them) intoxicated? ;Y;Y;F
+Q38;Преступление, которое мы обсуждали, было единственным или повторялось (случилось не меньше двух раз)?;Was the crime we discussed a one-off or a repeat offense (happened at least twice)? ;Y;N;N
+Q39;Рассказывали ли вы кому-нибудь из близких о случившемся?;Did you tell someone close about the crime? ;Y;Y;Y
+Q40;Узнали ли о случившемся правоохранительные органы?;Did the law enforcement find out about the crime? ;Y;Y;Y
+Q41;Кто обратился в правоохранительные органы?;Who contacted law enforcement? ;Y;Y;N
+Q42_1;Куда именно Вы обратились? В полицию;Where exactly did you report it? The police ;Y;Y;N
+Q42_2;Куда именно Вы обратились? В прокуратуру;Where exactly did you report it? The prosecutor's office ;Y;Y;N
+Q42_3;Куда именно Вы обратились? В следственный комитет;Where exactly did you report it? The Investigative Committee ;Y;Y;N
+Q42_999;Куда именно Вы обратились? Затрудняюсь ответить;Where exactly did you report it? Difficult to say ;Y;Y;N
+Q43;Как именно Вы обратились в полицию?;How exactly did you report it to the police? ;Y;O;N
+Q44;Как быстро полиция приехала после Вашего звонка?;How quickly did the police arrive after your call? ;Y;Y;N
+Q45;Сколько раз Вы встречались с сотрудниками правоохранительных органов по поводу случившегося?;How many times did you meet with law enforcement regarding the crime? ;Y;O;N
+Q46;В результате, они возбудили уголовное или административное дело? (1-Уголовное, 2-Административное);Did they open criminal or administrative case? ;Y;Y;O
+Q68;Дошло ли дело до суда?;Did the case go to a court? ;Y;Y;F
+Q47_1;Обращались ли Вы за помощью по поводу случившегося еще к кому-нибудь, кроме правоохранительных органов? В суд;Did you ask someone for help except law enforcement? Court ;Y;Y;F
+Q47_2;Обращались ли Вы за помощью по поводу случившегося еще к кому-нибудь, кроме правоохранительных органов? К адвокатам, юристам;Did you ask someone for help except law enforcement? Lawyer, attorney ;Y;Y;F
+Q47_3;Обращались ли Вы за помощью по поводу случившегося еще к кому-нибудь, кроме правоохранительных органов? К знакомым, близким, друзьям;Did you ask someone for help except law enforcement? Relatives, friends, distant friends ;Y;Y;F
+Q47_4;Обращались ли Вы за помощью по поводу случившегося еще к кому-нибудь, кроме правоохранительных органов? К частным лицам (например, частные охранные структуры);Did you ask someone for help except law enforcement? Private parties ;Y;Y;F
+Q47_5;Обращались ли Вы за помощью по поводу случившегося еще к кому-нибудь, кроме правоохранительных органов? В банк;Did you ask someone for help except law enforcement? Bank ;N;Y;QF
+Q47_6;Обращались ли Вы за помощью по поводу случившегося еще к кому-нибудь, кроме правоохранительных органов? К бандитам, криминальным авторитетам;Did you ask someone for help except law enforcement? To gangsters, criminal authorities ;N;Y;QF
+Q47_998;Обращались ли Вы за помощью по поводу случившегося еще к кому-нибудь, кроме правоохранительных органов? К кому-то другому;Did you ask someone for help except law enforcement? Other ;N;N;Y
+Q47_888;Обращались ли Вы за помощью по поводу случившегося еще к кому-нибудь, кроме правоохранительных органов? Нет, не обращался ни к кому;Did you ask someone for help except law enforcement? No ;Y;Y;F
+Q47_999;Обращались ли Вы за помощью по поводу случившегося еще к кому-нибудь, кроме правоохранительных органов? Затрудняюсь ответить;Did you ask someone for help except law enforcement? Difficult to say ;Y;Y;F
+Q49;Известен ли виновный или кто-либо из виновных, если их было несколько?;Did they identify the criminal (or one of them in case there were many)? ;Y;Y;Q
+Q50;Кем был найден виновный или кто-либо из виновных, если их было несколько?;Who identified the criminal (or one of them in case there were many)? ;Y;O;O
+Q51;Получил ли наказание виновный или кто-либо из виновных, если их было несколько?;Was the criminal punished (or one of them in case there were many)? ;Y;Y;Y
+Q52;Примирились ли вы с виновными?;Did you reconcile with the criminal(s)? ;Y;Y;Q
+Q53;Добивались ли вы материальной компенсации? Если да, то удалось ли ее добиться полностью, частично или не удалось?;Did you claim for compensation? If you did, have you been compensated? ;Y;Y;O
+Q54;Оказавшись снова в аналогичной ситуации, Вы, скорее всего, обратились бы в полицию?;If the same crime were to happen to you again, would you contact the police? ;Y;Y;Y
+Q55;Насколько Вас эмоционально затронула эта ситуация? Оцените, пожалуйста, по шкале от 1 до 10, где 1 - абсолютно не затронула, 10 - очень сильно затронула.;How much were you emotionally affected by this situation? Please rate it on a scale from 1 to 10, where 1 is absolutely unaffected, 10 is very much affected. ;N;N;Y
+Q81;Сейчас хотели бы задать три вопроса о ваших ощущениях безопасности. Представьте, Вы идете в одиночестве после наступления темноты в районе, где Вы живете. Насколько безопасно Вы себя чувствуете в такой ситуации?;Now we'd like to ask three questions about your feelings of safety. Imagine you are walking alone after dark in the neighbourhood where you live. How safe do you feel in this situation? ;N;Y;O
+Q82;Как часто вас беспокоит мысль о том, что Ваш дом или квартиру могут ограбить или обокрасть?;How often do you worry about the thought that your house or flat might be burgled or robbed? ;N;Y;O
+Q83;Как часто вас беспокоит мысль о том, что Вы можете стать жертвой нападения?;How often do you worry about being a victim of assault? ;N;Y;O
+Q572;Насколько Вы удовлетворены своей жизнью в целом в настоящее время? Ответьте по шкале от 1 до 10, где 1 – полностью не удовлетворен, а 10 – полностью удовлетворен.;How satisfied are you with your life in general at present? Answer on a scale of 1 to 10, where 1 is completely not satisfied and 10 is completely satisfied. ;N;Y;Y
+Q573;В целом, как вы считаете, большинству людей можно доверять или нужно быть осторожнее?;Do you think most people can be trusted or do you need to be more careful? ;N;N;Y
+Q574;Вы согласны с тем, что полиции можно доверять?;Do you agree that the police can be trusted? ;N;N;Y
+Q575;Вы согласны с тем, что судебной системе можно доверять?;Do you agree that the judicial system can be trusted? ;N;N;Y
+Q78;Спасибо! Мы изучаем какие люди становятся или не становятся жертвами преступлений, поэтому так же просим ответить вас на вопросы общего характера. Скажите, Вы проживаете один/одна?;Thank you! We're studying what kind of people do and don't become victims of crime, so we'd also like to ask you to answer some general questions. Do you live alone? ;Y;Y;QO
+Q79;Состоите ли Вы в браке?;Are you married? ;Y;Y;Y
+Q80;Сколько человек, считая вас, живет с вами вместе и ведет общее хозяйство?;How many people live in your household including you? ;Y;Y;Y
+Q80_1N;Размер домохозяйства (число);Household size (number) ;Y;Y;Y
+Q801;Как часто вы общаетесь с ближайшими родственниками?;How often do you communicate with your closest relatives? ;N;N;Y
+Q802;Каким образом вы чаще всего общаетесь с ближайшими родственниками?;How do you most often communicate with your closest relatives? ;N;N;Y
+Q57;Как бы вы определили свой уровень дохода?;How would you define your income level? ;Y;Y;Y
+Q571_loan;Сейчас у вас есть какой-либо банковский или потребительский кредит, по которому вам нужно выплачивать деньги?;Do you currently have any bank or consumer loans on which you need to make repayments? ;N;N;Q571
+Q571;Вы могли бы примерно назвать суммарный ежемесячный доход всех, с кем Вы живете и ведете общее хозяйство, включая вас?;Could you roughly name the total monthly income of everyone with whom you live and share a household, including you? ;N;Y;Q570
+Q571_1N;Сумма (руб.);Household income (number) ;N;Y;Q570_1N
+Q58;У вас есть работа?;Do you have a job at the moment? ;Y;Y;Y
+Q69;Вы учитесь в настоящее время?;Are you currently studying? ;Y;Y;Y
+Q691;Как вы обычно добираетесь до места учебы?;How do you usually get to your place of study? ;N;N;Y
+Q692;Как вы обычно добираетесь до места работы?;How do you usually get to your place of work? ;N;N;Y
+Q70;Вы получаете пенсию, пособие, стипендию от государства?;Do you receive pension, compensation, or stipend from state? ;Y;Y;Q
+Q71;Искали ли Вы работу в течение последних 12 месяцев?;Did you search for a job during the last 12 months? ;Y;Y;Y
+Q72;На работе Вы руководите другими людьми?;Do you supervise other people on your job? ;Y;Y;Y
+Q73;Ваша работа связана с физическим трудом?;Does your job involve physical labor? ;Y;Y;F
+Q701;Вы имеете инвалидность?;Do you have a disability? ;N;N;Y
+Q702;Как часто вы пили алкоголь (включая пиво) в последние 30 дней?;How often did you drink alcohol (including beer) in the last 30 days? ;N;N;Y
+Q743;Оцените свои навыки владения компьютером и смартфоном от 1 до 5: где «1» - очень плохо владею, а «5» - очень хорошо владею:;Rate your computer and smartphone skills from 1 to 5: where 1 is very poorly proficient and 5 is very proficient ;N;N;Y
+Q74;Вы - предприниматель / фрилансер / самозанятый?;Are you an entrepreneur / freelancer / self-employed? ;Y;O;N
+Q60;У Вас есть гражданство Российской Федерации?;Do you have Russian citizenship? ;Y;Y;N
+Q61;Какое у вас образование?;What education do you have? ;Y;Y;Y
+Q64;Есть ли среди Ваших знакомых работники правоохранительных органов или Вы сами там работаете или работали?;Do you or your acquaintances have work experience in law enforcement agencies? ;Y;Y;O
+Q65;Привлекались ли Вы сами когда-нибудь к уголовной ответственности?;Do you have a criminal record? ;Y;Y;Y
+Q420;Как вы считаете, употребление марихуаны в личных целях должно быть законным или незаконным?;Do you think personal use of marijuana should be legal or illegal? ;N;N;Y
+Q664;Вы могли бы назвать браузер, который больше предпочитаете или которым пользуетесь обычно?;Could you name the browser that you prefer or that you usually use? ;N;Y;N

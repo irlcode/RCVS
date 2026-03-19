@@ -1,0 +1,55 @@
+---
+title: "<span style='font-size: 30px'>RCVS Victimization Survey Variable Change Codebook(18-21-24)</style>"
+author:
+- affiliation: Director IRL EUSPb
+  name: Ruslan Kuchakov
+- affiliation: Researcher IRL EUSPb
+  name: Dmitrii Serebrennikov
+- affiliation: Researcher IRL EUSPb
+  name: Dmitry Bobrikov
+- affiliation: Assistant Professor in the Department of Criminology at the University of South Florida
+  name: Alex Knorre
+- affiliation: Associate Professor of Empirical Legal Studies at European University at Saint Petersburg
+  name: Dmitry Skougarevskiy
+date: '`r Sys.Date()`'
+output:
+  html_document:
+    encoding: UTF-8
+---
+
+![](img/ipp_logo_eng.png){#id .class width="274" height="110px"}
+![](img/eusp_logo_eng.png){.class width="274" height="px"}
+
+The codebook provides information on how variables have changed in three waves of the RCVS in 2018, 2021, and 2024. The symbols in the table below have the following meanings:
+
+*N* — variable is not present in the wave.
+
+*Y* — variable is present in the wave.
+
+*Q* — variable is present in the wave, but the question has been modified.
+
+*O* — variable is present in the wave, but the answer options in the question have been modified.
+
+*F* — variable is present in the wave, but the filter for it has been modified.
+
+*(variable name)* — variable is present in the wave, but is named differently.
+
+The presence of multiple letters from the list Q, O, F indicates that there were multiple changes.
+
+```{r setup, echo=F, warning=FALSE}
+library(kableExtra, quietly = T)
+library(data.table)
+options(knitr.kable.NA = ' ')
+
+qof_changes <- fread("../../data/supplementary_data/qof_changes.csv")
+qof_changes[, names(qof_changes) := lapply(.SD, iconv, from = "CP1251", to = "UTF-8")]
+names(qof_changes) <- iconv(names(qof_changes), from = "CP1251", to = "UTF-8")
+
+qof_changes[, `Значение переменной` := NULL]
+
+names(qof_changes) <- c("ID", "Variable label", "2018", "2021", "2024")
+
+kable(qof_changes, align = "l") %>%
+  kable_styling(font_size = 10, full_width = F) %>%
+  column_spec(1, bold = T)
+```

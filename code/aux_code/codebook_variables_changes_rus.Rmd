@@ -1,0 +1,55 @@
+---
+title: "<span style='font-size: 30px'>Кодбук изменений переменных виктимизационного опроса RCVS(18-21-24)</style>"
+author:
+- affiliation: Директор ИПП ЕУ СПб
+  name: Руслан Кучаков
+- affiliation: Исследователь ИПП ЕУ СПб
+  name: Дмитрий Серебренников
+- affiliation: Исследователь ИПП ЕУ СПб
+  name: Дмитрий Бобриков
+- affiliation: Ассистент-профессор департамента криминологии Университета Южной Флориды
+  name: Алексей Кнорре
+- affiliation: Ассоциированный профессор по эмпирико-правовым исследованиям им. С.А. Муромцева ЕУ СПб
+  name: Дмитрий Скугаревский
+date: '`r Sys.Date()`'
+output:
+  html_document:
+    encoding: UTF-8
+---
+
+![](img/ipp_logo.png){#id .class width="274" height="65px"} 
+![](img/eusp_logo.png){.class width="220" height="65px"}
+
+Текущий кодбук предоставляет информацию о том, как менялись переменные в 3 волных виктимизационного опроса, проведенных в 2018, 2021 и 2024 годах. Обозначения, приведенные в таблице ниже, имеют следующие значения:
+
+*N* -- переменная отутствует в волне
+
+*Y* -- переменная присутствует в волне
+
+*Q* -- переменная присутствует в волне, но вопрос был видоизменен
+
+*O* -- переменная присутствует в волне, но в вопросе были изменены варианты ответа
+
+*F* -- переменная присутствует в волне, но фильтр к ней был изменен
+
+*(название переменной)* -- переменная присутствует в волне, но называется по-другому 
+
+Наличие нескольких букв из перечня *Q*, *O*, *F* означает, что изменений было несколько.
+
+```{r setup, echo=F, warning=FALSE}
+library(kableExtra, quietly = T)
+library(data.table)
+options(knitr.kable.NA = ' ')
+
+qof_changes <- fread("../../data/supplementary_data/qof_changes.csv")
+qof_changes[, names(qof_changes) := lapply(.SD, iconv, from = "CP1251", to = "UTF-8")]
+names(qof_changes) <- iconv(names(qof_changes), from = "CP1251", to = "UTF-8")
+
+qof_changes[, `Variable label` := NULL]
+
+names(qof_changes) <- c("ID", "Значение переменной", "2018", "2021", "2024")
+
+kable(qof_changes, align = "l") %>%
+  kable_styling(font_size = 10, full_width = F) %>%
+  column_spec(1, bold = T)
+```

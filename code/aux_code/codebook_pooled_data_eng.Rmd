@@ -1,0 +1,75 @@
+---
+title: "Codebook for the pooled RCVS data: repeated cross-sections (2018, 2021, 2024) and the 2021–2024 panel"
+author:
+- affiliation: Director IRL EUSPb
+  name: Ruslan Kuchakov
+- affiliation: Researcher IRL EUSPb
+  name: Dmitrii Serebrennikov
+- affiliation: Researcher IRL EUSPb
+  name: Dmitry Bobrikov
+- affiliation: Assistant Professor in the Department of Criminology at the University of South Florida
+  name: Alex Knorre
+- affiliation: Associate Professor of Empirical Legal Studies at European University at Saint Petersburg
+  name: Dmitry Skougarevskiy
+date: '`r Sys.Date()`'
+output:
+  html_document:
+    encoding: UTF-8
+---
+
+![](img/ipp_logo_eng.png){#id .class width="274" height="110px"}
+![](img/eusp_logo_eng.png){.class width="274" height="px"}
+
+```{r, setup, echo=F, warning=FALSE, message=FALSE}
+library(kableExtra,quietly = T)
+library(dplyr, quietly = T)
+options(knitr.kable.NA = ' ')
+
+codebook_path <- "../../data/supplementary_data/codebook_all_waves_eng.csv" # Input the full path to the file on your device for proper knitting 
+codebook <- read.csv2(file = codebook_path, stringsAsFactors = F, sep = ",", encoding = "UTF-8")
+
+original_cb <- codebook[grep("^Q|ID|IV", codebook$variable_id),]
+original_cb <- rbind(original_cb[grep("ID|IVDur|Q2001", original_cb$variable_id),], original_cb[-grep("ID|IVDur|Q2001", original_cb$variable_id),])
+
+constructed_cb <- codebook[-grep("^Q|ID|IV", codebook$variable_id),]
+
+rownames(original_cb) <- NULL
+rownames(constructed_cb) <- NULL
+```
+
+## Generated variables
+
+All generated variables are created from the original variables obtained directly from the survey, but there are several important differences that may be critical when conducting research on constructed variables. 
+
+First, for analysis purposes, we almost everywhere coded non-response and difficulty answering as ‘No’, i.e. 0, to obtain binary variables.  
+
+Second, in many cases additional grouping was done (as, for example, with employment, which was recovered from single questions related to age and nature of labour). 
+
+Third, the survey design itself was arranged so that many questions were only asked under a specific set of conditions (e.g., the question about medical care was only asked of those who said physical harm).   
+
+We therefore advise using these variables with caution, checking the distributions of responses against the original variables. If you find errors or have questions, please email us at d.bobrikov@eu.spb.ru.
+
+```{r, constructed_variables, echo=FALSE}
+names(constructed_cb) <- c("Variable ID",
+                     "Variable label",
+                     "Encoding")
+
+kable(constructed_cb, align = "l") %>%
+  kable_styling(font_size = 10, full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  collapse_rows(columns = 1:3, valign = "top")
+```
+
+## Original variables
+
+```{r, original_variables, echo=FALSE}
+
+names(original_cb) <- c("Variable ID",
+                     "Variable label",
+                     "Encoding")
+
+kable(original_cb, align = "l") %>%
+  kable_styling(font_size = 10, full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  collapse_rows(columns = 1:3, valign = "top")
+```

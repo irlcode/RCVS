@@ -1,0 +1,71 @@
+---
+title: "Кодбук объединенных данных RCVS: повторные кросс-секционные опросы (2018, 2021, 2024) и панель 2021–2024 гг."
+author:
+- affiliation: Директор ИПП ЕУ СПб
+  name: Руслан Кучаков
+- affiliation: Исследователь ИПП ЕУ СПб
+  name: Дмитрий Серебренников
+- affiliation: Исследователь ИПП ЕУ СПб
+  name: Дмитрий Бобриков
+- affiliation: Ассистент-профессор департамента криминологии Университета Южной Флориды
+  name: Алексей Кнорре
+- affiliation: Ассоциированный профессор по эмпирико-правовым исследованиям им. С.А. Муромцева ЕУ СПб
+  name: Дмитрий Скугаревский
+date: '`r Sys.Date()`'
+output:
+  html_document:
+    encoding: UTF-8
+---
+
+![](img/ipp_logo.png){#id .class width="274" height="65px"} 
+![](img/eusp_logo.png){.class width="220" height="65px"}
+
+```{r, setup, echo=F, warning=FALSE, message=FALSE}
+library(kableExtra,quietly = T)
+library(dplyr, quietly = T)
+options(knitr.kable.NA = ' ')
+
+codebook_path <- "../../data/supplementary_data/codebook_all_waves_rus.csv" # Input the full path to the file on your device for proper knitting 
+codebook <- read.csv2(file = codebook_path, stringsAsFactors = F, sep = ",", encoding = "UTF-8")
+
+original_cb <- codebook[grep("^Q|ID|IV", codebook$variable_id),]
+original_cb <- rbind(original_cb[grep("ID|IVDur|Q2001", original_cb$variable_id),], original_cb[-grep("ID|IVDur|Q2001", original_cb$variable_id),])
+
+constructed_cb <- codebook[-grep("^Q|ID|IV", codebook$variable_id),]
+
+rownames(original_cb) <- NULL
+rownames(constructed_cb) <- NULL
+```
+
+## Сконструированные переменные
+
+Все сконструированные переменные созданы на основе оригинальных переменных, полученных непосредственно в результате опроса, однако есть несколько важных отличий, которые могут быть критическими при проведении исследований на сконструированных переменных. 
+
+Во-первых, в целях анализа мы почти везде кодировали не-ответы и затруднения ответить как «Нет», то есть 0, чтобы получить бинарные переменные.  
+
+Во-вторых, во многих случаях была сделана дополнительная группировка (как, например, с занятостью, которая была восстановлена из одиночных вопросов, связанных с возрастом и характером труда). 
+
+В-третьих, сама структура опроса устроена так, что многие вопросы задавались только при специфическом наборе условий (например, вопрос о медицинской помощи задавался только тем, кто говорил о физическом вреде).   
+
+Поэтому мы советуем использовать эти переменные с осторожностью, проверяя распределения ответов в сравнении с оригинальными переменными. Если вы нашли ошибки или у вас есть вопросы, пожалуйста, напишите нам на d.bobrikov@eu.spb.ru.
+
+```{r, constructed_variables, echo=FALSE}
+names(constructed_cb) <- c("Название переменной", "Значение переменной", "Кодировка переменной")
+
+kable(constructed_cb, align = "l") %>%
+  kable_styling(font_size = 10, full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  collapse_rows(columns = 1:3, valign = "top")
+```
+
+## Original variables
+
+```{r, original_variables, echo=FALSE}
+
+names(original_cb) <- c("Название переменной", "Значение переменной", "Кодировка переменной")
+
+kable(original_cb, align = "l") %>%
+  kable_styling(font_size = 10, full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  collapse_rows(columns = 1:3, valign = "top")
+```
