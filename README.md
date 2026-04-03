@@ -178,14 +178,14 @@ These figures from the paper are produced by script `code/02_produce_figures.R`:
 
 Please cite as:
 
-> Kuchakov, R., Serebrennikov, D., Bobrikov, D., Knorre, A., & Skougarevskiy, D. (2026). Russian Crime Victimization Survey: Pooled Cross-Sections and a Longitudinal Panel, 2018–2024 (SSRN Scholarly Paper No. 6418058). Social Science Research Network. <https://papers.ssrn.com/abstract=6418058>
+> Kuchakov, R., Serebrennikov, D., Bobrikov, D., Knorre, A., & Skougarevskiy, D. (2026). Russian Crime Victimization Survey: Pooled Cross-Sections and a Longitudinal Panel, 2018–2024 (SSRN Scholarly Paper No. 6418058). Social Science Research Network. <http://dx.doi.org/10.2139/ssrn.6418058>
 
 ``` tex
 @article{kuchakov2026rcvs,
   title={{R}ussian {C}rime {V}ictimization {S}urvey: {P}ooled {C}ross-{S}ections and a {L}ongitudinal {P}anel, 2018–2024},
   author={Kuchakov, Ruslan and Serebrennikov, Dmitriy and Bobrikov, Dmitriy and Knorre, Alex and Skougarevskiy, Dmitriy},
   journal={Social Science Research Network (SSRN)},
-  note={\url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6418058}},
+  doi={http://dx.doi.org/10.2139/ssrn.6418058},
   year={2026},
 }
 ```
