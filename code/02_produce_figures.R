@@ -166,7 +166,7 @@ common_legend <- get_only_legend(prevalence_realdamage_plot)
 # Save results
 prevalence_plots <- grid.arrange(arrangeGrob(prevalence_plot + theme(legend.position = "none"), prevalence_realdamage_plot + theme(legend.position = "none"), nrow = 1), common_legend, nrow = 2, heights= c(10,1))
 
-ggsave(prevalence_plots, file = "figures/prevalence_plot.png", dpi = 300, width = 10, height = 6)
+ggsave(prevalence_plots, file = "figures/prevalence_plot.png", dpi = 300, width = 10, height = 6, bg = "white")
 
   
 
@@ -203,7 +203,7 @@ crimetype_plot <- ggplot(crimetype, aes(year, mean, label = mean)) +
         axis.text = element_text(size = 11),
         strip.text = element_text(size = 13))
 
-ggsave(crimetype_plot, file = "figures/crimetype_plot.png", dpi = 300, width = 9, height = 9)
+ggsave(crimetype_plot, file = "figures/crimetype_plot.png", dpi = 300, width = 9, height = 9, bg = "white")
 #ggsave(crimetype_plot, file = "results/crimetype_plot.pdf", dpi = 300, width = 9, height = 9, device = pdf)
 
 
@@ -230,4 +230,4 @@ age_plot <- ggplot(dtyears, aes(Age_Groups, victim_lvl, col = year, group = year
         axis.text = element_text(size = 11),
         strip.text = element_text(size = 13))
   
-ggsave(age_plot, file = "figures/age_plot.png", dpi = 300, width = 8, height = 5)
+ggsave(age_plot, file = "figures/age_plot.png", dpi = 300, width = 8, height = 5, bg = "white")
