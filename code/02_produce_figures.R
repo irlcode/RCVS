@@ -170,15 +170,18 @@ ggsave(prevalence_plots, file = "figures/prevalence_plot.png", dpi = 300, width 
 
   
 
-# Crime type RCVS----
+# RCVS crime types (last 12 months)----
 crimetype_obj <- dummy_cols(rcvs[, .(ID, year, crime_type)], select_columns = "crime_type", remove_first_dummy = F, remove_most_frequent_dummy = F, ignore_na = T, remove_selected_columns = T)
 crimetype_obj[, names(crimetype_obj) := lapply(.SD, function(x) { ifelse(is.na(x), 0, x) })]
 crimetype_obj[, c("crime_type_Прочее", "crime_type_Недостаточно информации") := NULL]
 
 crimetype_molten <- melt(crimetype_obj, id.vars = c("ID", "year"))
-crimetype_molten[rcvs, "weight" := i.weight, on = .(ID)]
+crimetype_molten[rcvs, c("weight", "victim12m") := .(i.weight, i.victim12m), on = .(ID, year)]
 
-crimetype <- crimetype_molten[, .(mean = weighted.mean(value, w = weight),  me = weighted.se(value, w = weight)*1.96), by = .(year, variable)]
+crimetype_molten[value == 1 & victim12m == 0, value := 0]
+crimetype_molten[is.na(victim12m) & value == 1, value := NA_real_]
+
+crimetype <- crimetype_molten[, .(mean = weighted.mean(value, w = weight, na.rm = T),  me = weighted.se(value, w = weight)*1.96), by = .(year, variable)]
 
 crimetype[, variable := as.character(variable)]
 crimetype[, variable := factor(variable, levels = c("crime_type_Нападение",
@@ -196,9 +199,10 @@ crimetype_plot <- ggplot(crimetype, aes(year, mean, label = mean)) +
   geom_ribbon(aes(ymin = mean-me, ymax=mean+me), alpha = 0.2, size = 0.1) +
   facet_wrap(~variable, nrow = 3) +
   scale_x_continuous(name = NULL, breaks = c(2018, 2021, 2024)) +
-  scale_y_continuous(name = NULL, limits = c(0, 0.075), labels = function(x) paste0(x*100, "%"), expand = c(0,0.005)) +
+  scale_y_continuous(name = NULL, limits = c(0, 0.054), breaks = c(1:5/100), labels = function(x) paste0(x*100, "%"), expand = c(0,0.005)) +
   theme_minimal() +
   theme(legend.key.width = unit(2, "cm"),
+        panel.grid.minor = element_blank(),
         text = element_text(size = 11),
         axis.text = element_text(size = 11),
         strip.text = element_text(size = 13))
