@@ -3,7 +3,7 @@ message("9. Producing figures...")
 # which present key findings from the RCVS data descriptor preprint.
 
 # Weighted means
-weighted.se <- function(x, w) { sqrt( (wtd.var(x, na.rm = T, weights = w)) / sum(w)) }
+weighted.se <- function(x, w) { sqrt( (wtd.var(x, na.rm = T, weights = w)) / ((sum(w)^2) / sum(w^2)) ) }
 
 # Data preparation----
 # Load RCVS RDD 2018-2024
@@ -222,7 +222,7 @@ age_plot <- ggplot(dtyears, aes(Age_Groups, victim_lvl, col = year, group = year
   scale_x_discrete(name = "Age 18 to 65+", 
                    expand = c(0,0.1)) +
   scale_y_continuous(name = "Prevalence level, %", 
-                     limits = c(0,0.22), 
+                     limits = c(0,0.23), 
                      expand = c(0,0), 
                      labels = function(x) { paste0(x*100, "%") }) +
   scale_color_manual(values = c("#4daf4a", "#377eb8", "#e41a1c"), name = "Wave: ") +
