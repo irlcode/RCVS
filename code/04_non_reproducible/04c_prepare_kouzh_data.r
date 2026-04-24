@@ -114,6 +114,9 @@ rm(kouzh_2018_data, kouzh_2020_data, kouzh_2022_data, kouzh_2024_data); gc()
 kouzh_18_20_22_24 <- copy(remove_attributes(kouzh_18_20_22_24, attributes = c("label", "format.spss", "display_width", "labels")))
 
 # Make variables conformable with RCVS survey
+cols_into_numeric <- names(kouzh_18_20_22_24)[!names(kouzh_18_20_22_24) %in% c("household_id", "individual_id")]
+kouzh_18_20_22_24[, (cols_into_numeric) := lapply(.SD, as.numeric), .SDcols = cols_into_numeric]
+
 # Education
 kouzh_18_20_22_24[, education := NA_real_]
 kouzh_18_20_22_24[education_level %in% c(7, 8, 9), education := 1]
@@ -125,7 +128,6 @@ kouzh_18_20_22_24[, .N, by = education_level]
 
 # To binary variables
 yes_no_variables <- c("work_status", "has_cellphone", "receives_pension")
-kouzh_18_20_22_24[, c(yes_no_variables) := lapply(.SD, as.numeric), .SDcols = yes_no_variables]
 kouzh_18_20_22_24[, c(yes_no_variables) := lapply(.SD, function(x) { abs(x-2) }), .SDcols = yes_no_variables]
 
 # Male dummy
@@ -195,7 +197,6 @@ kouzh_18_20_22_24[, year := as.integer(year)]
 kouzh_18_20_22_24[gdp_deflator, "deflator2024rub" := deflator2024rub, on = .(year)]
 
 vars_to_deflate <- c("household_income", "mean_household_income")
-kouzh_18_20_22_24[, c(vars_to_deflate) := lapply(.SD, as.numeric), .SDcols = vars_to_deflate]
 kouzh_18_20_22_24[, c(vars_to_deflate) := lapply(.SD, function(x) { x / deflator2024rub }), .SDcols = vars_to_deflate]
 
 # Urban/rural dummy
