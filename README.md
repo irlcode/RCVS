@@ -1,5 +1,5 @@
 # Russian Crime Victimization Survey (RCVS)
-[![](https://img.shields.io/badge/rcvs.enforce.spb.ru-FF8C00)](http://rcvs.enforce.spb.ru) &nbsp;&nbsp;&nbsp; ![](https://img.shields.io/badge/SSRN-10.2139/ssrn.6418058-blue?logo=ssrn)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6418058) &nbsp;&nbsp;&nbsp; [![Dataverse](https://img.shields.io/badge/Dataverse_DOI-10.7910/DVN/ISMDV5-firebrick)](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ISMDV5) &nbsp;&nbsp;&nbsp; ![R](https://img.shields.io/badge/R-4.0+-blue) &nbsp;&nbsp;&nbsp; [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) 
+[![](https://img.shields.io/badge/rcvs.enforce.spb.ru-FF8C00)](http://rcvs.enforce.spb.ru) &nbsp;&nbsp;&nbsp;  [![](https://img.shields.io/badge/SSRN-10.2139/ssrn.6418058-blue?logo=ssrn)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6418058) &nbsp;&nbsp;&nbsp; [![Dataverse](https://img.shields.io/badge/Dataverse_DOI-10.7910/DVN/ISMDV5-firebrick)](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ISMDV5) &nbsp;&nbsp;&nbsp; ![R](https://img.shields.io/badge/R-4.0+-blue) &nbsp;&nbsp;&nbsp; [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) 
 
 This replication package accompanies [the paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6418058). It documents steps to prepare a pooled dataset, and produces figures in the paper about RCVS.
 
@@ -168,7 +168,7 @@ These figures from the paper are produced by script `code/02_produce_figures.R`:
 
 -   [ ] Computing weights for combining the 2024 refreshment (cross-sectional) and panel samples ([Watson, 2014](https://ojs.ub.uni-konstanz.de/srm/article/view/5818), [Watson, Lynn, 2021](https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119376965.ch1)).
 -   [ ] Calculating wave-specific post-stratification weights for each cross-sectional sample instead of a unified approach.
--   [ ] Improving weight trimming and moving beyond rule-based approaches ([Cole, Herman, 2008](https://academic.oup.com/aje/article-abstract/168/6/656/88658?redirectedFrom=fulltext), [Battaglia et al. 2009](https://www.surveypractice.org/article/2953-practical-considerations-in-raking-survey-data), [Chen et al., 2017](https://projecteuclid.org/journals/statistical-science/volume-32/issue-2/Approaches-to-Improving-Survey-Weighted-Estimates/10.1214/17-STS609.full)) 
+-   [ ] Improving weight trimming and moving beyond rule-based approaches ([Cole, Herman, 2008](https://academic.oup.com/aje/article-abstract/168/6/656/88658?redirectedFrom=fulltext), [Battaglia et al. 2009](https://www.surveypractice.org/article/2953-practical-considerations-in-raking-survey-data), [Chen et al., 2017](https://projecteuclid.org/journals/statistical-science/volume-32/issue-2/Approaches-to-Improving-Survey-Weighted-Estimates/10.1214/17-STS609.full)). 
 
 ## Licence
 
@@ -196,9 +196,9 @@ Ruslan Kuchakov, [rkuchakov@eu.spb.ru](mailto:rkuchakov@eu.spb.ru)
 
 ## Media Coverage
 
-- <a href="https://www.rbc.ru/society/14/04/2026/69d8bc3c9a79473ded8b0d1b?utm_referrer=https%3A%2F%2Fwww.google.com%2F" target="_blank"><img src="figures/rbc_logo_upscaled.png" alt="RBC" width="36" height="36" /></a> РБК, Европейский университет измерил уровень «скрытой» преступности в России (Апрель, 2026): https://www.rbc.ru/society/14/04/2026/69d8bc3c9a79473ded8b0d1b
+- <a href="https://www.rbc.ru/society/14/04/2026/69d8bc3c9a79473ded8b0d1b?utm_referrer=https%3A%2F%2Fwww.google.com%2F" target="_blank"><img src="figures/rbc_logo_upscaled.png" alt="RBC" width="36" height="36" /></a> РБК, «Европейский университет измерил уровень «скрытой» преступности в России» (Апрель, 2026): https://www.rbc.ru/society/14/04/2026/69d8bc3c9a79473ded8b0d1b
 
-- <a href="https://tochno.st/materials/skolko-liudei-stanoviatsia-zertvami-prestuplenii-i-kakaia-cast-prestupnosti-ne-ucityvaetsia-v-oficialnoi-statistike" target="_blank"><img src="figures/tochno_st_logo.png" alt="tochno.st" width="36" height="36"  /></a> Сколько людей становятся жертвами преступлений и какая часть преступности не учитывается в официальной статистике (Май, 2026): https://tochno.st/materials/skolko-liudei-stanoviatsia-zertvami-prestuplenii-i-kakaia-cast-prestupnosti-ne-ucityvaetsia-v-oficialnoi-statistike
+- <a href="https://tochno.st/materials/skolko-liudei-stanoviatsia-zertvami-prestuplenii-i-kakaia-cast-prestupnosti-ne-ucityvaetsia-v-oficialnoi-statistike" target="_blank"><img src="figures/tochno_st_logo.png" alt="tochno.st" width="36" height="36"  /></a> Если быть точным. «Сколько людей становятся жертвами преступлений и какая часть преступности не учитывается в официальной статистике» (Май, 2026): https://tochno.st/materials/skolko-liudei-stanoviatsia-zertvami-prestuplenii-i-kakaia-cast-prestupnosti-ne-ucityvaetsia-v-oficialnoi-statistike
 
 ## Further reading
 
