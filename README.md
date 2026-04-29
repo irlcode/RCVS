@@ -198,7 +198,7 @@ Ruslan Kuchakov, [rkuchakov@eu.spb.ru](mailto:rkuchakov@eu.spb.ru)
 
 - <a href="https://www.rbc.ru/society/14/04/2026/69d8bc3c9a79473ded8b0d1b?utm_referrer=https%3A%2F%2Fwww.google.com%2F" target="_blank"><img src="figures/rbc_logo_upscaled.png" alt="RBC" width="36" height="36" /></a> РБК, «Европейский университет измерил уровень «скрытой» преступности в России» (Апрель, 2026): https://www.rbc.ru/society/14/04/2026/69d8bc3c9a79473ded8b0d1b
 
-- <a href="https://tochno.st/materials/skolko-liudei-stanoviatsia-zertvami-prestuplenii-i-kakaia-cast-prestupnosti-ne-ucityvaetsia-v-oficialnoi-statistike" target="_blank"><img src="figures/tochno_st_logo.png" alt="tochno.st" width="36" height="36"  /></a> Если быть точным. «Сколько людей становятся жертвами преступлений и какая часть преступности не учитывается в официальной статистике» (Май, 2026): https://tochno.st/materials/skolko-liudei-stanoviatsia-zertvami-prestuplenii-i-kakaia-cast-prestupnosti-ne-ucityvaetsia-v-oficialnoi-statistike
+- <a href="https://tochno.st/materials/skolko-liudei-stanoviatsia-zertvami-prestuplenii-i-kakaia-cast-prestupnosti-ne-ucityvaetsia-v-oficialnoi-statistike" target="_blank"><img src="figures/tochno_st_logo.png" alt="tochno.st" width="36" height="36"  /></a> Если быть точным, «Сколько людей становятся жертвами преступлений и какая часть преступности не учитывается в официальной статистике» (Май, 2026): https://tochno.st/materials/skolko-liudei-stanoviatsia-zertvami-prestuplenii-i-kakaia-cast-prestupnosti-ne-ucityvaetsia-v-oficialnoi-statistike
 
 ## Further reading
 
