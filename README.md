@@ -202,6 +202,7 @@ Ruslan Kuchakov, [rkuchakov@eu.spb.ru](mailto:rkuchakov@eu.spb.ru)
 
 ## Further reading
 
-- Серебренников, Титаев. Динамика преступности и виктимизации в России 2018–2021 гг. Результаты второго виктимизационного опроса. ИПП ЕУСПб, 2022. [https://enforce.spb.ru/images/rcvs_2021_block_online.pdf](https://enforce.spb.ru/images/rcvs_2021_block_online.pdf)
-- Веркеев и др. Как изучать жертв преступлений? Мониторинг общественного мнения: экономические и социальные перемены, 2. [https://doi.org/10.14515/monitoring.2019.2.01](https://www.monitoringjournal.ru/index.php/monitoring/article/view/632) 
-- Кнорре, Титаев. Преступность и виктимизация в России. Результаты всероссийского виктимизационного опроса. ИПП ЕУСПб, 2018. [https://enforce.spb.ru/images/analytical_review/irl_rcvs_memo_29.10.pdf](https://enforce.spb.ru/images/analytical_review/irl_rcvs_memo_29.10.pdf)
+- Серебренников, Титаев (2022) Динамика преступности и виктимизации в России 2018–2021 гг. Результаты второго виктимизационного опроса. ИПП ЕУСПб. [https://enforce.spb.ru/images/rcvs_2021_block_online.pdf](https://enforce.spb.ru/images/rcvs_2021_block_online.pdf)
+- Веркеев, Волков и др. (2019) Как изучать жертв преступлений? Мониторинг общественного мнения: экономические и социальные перемены, 2. [https://doi.org/10.14515/monitoring.2019.2.01](https://www.monitoringjournal.ru/index.php/monitoring/article/view/632) 
+- Титаев (2019) Насильственная преступность в России: жертвы и преступления. ИПП ЕУСПб. [https://enforce.spb.ru/images/official_victimization_online.pdf](https://enforce.spb.ru/images/official_victimization_online.pdf)
+- Кнорре, Титаев (2018) Преступность и виктимизация в России. Результаты всероссийского виктимизационного опроса. ИПП ЕУСПб. [https://enforce.spb.ru/images/analytical_review/irl_rcvs_memo_29.10.pdf](https://enforce.spb.ru/images/analytical_review/irl_rcvs_memo_29.10.pdf)

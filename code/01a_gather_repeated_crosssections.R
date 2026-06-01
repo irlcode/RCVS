@@ -121,6 +121,11 @@ rcvs21[, Q46 := fcase(
   default = NA_character_ 
 )]
 
+## Fix variables where bank and criminals are mixed
+setnames(rcvs21, old = "Q47_5", new = "temp")
+setnames(rcvs21, old = "Q47_6", new = "Q47_5")
+setnames(rcvs21, old = "temp", new = "Q47_6")
+
 rcvs18[, Q46 := fcase(
   Q46 == "Уголовное дело", "Да",
   Q46 == "Административное дело", "Да",
@@ -139,6 +144,10 @@ setnames(rcvs24, old = "Q570_1N", new = "Q571_1N")
 attr(rcvs24$year, "label") <- "Год"
 attr(rcvs24$Q66, "label") <- "Можно ли сказать, что в Вашем случае преступление произошло через телефон / интернет (например, злоумышленники Вам звонили или писали с просьбой перевести им деньги) или к Вашему случаю это неприменимо?"
 attr(rcvs24$Q6, "label") <- "В момент преступления вы разговаривали со злоумышленником?"
+# Little fix income labeling
+attr(rcvs24$resp_household_income, "label") <- "Суммарный месячный доход домохозяйства респондента (после исправления ошибок с порядком величин и винсоризации на ур. 99%)"
+attr(rcvs24$resp_mean_household_income, "label") <- "Усреднённый доход члена домохозяйства респондента (после исправления ошибок с порядком величин и винсоризации на ур. 99%)"
+
 key_pairs_rdd <- data.table(variable = names(rcvs24), label = label(rcvs24))
 fwrite(key_pairs_rdd, file = "data/supplementary_data/key_pairs_rdd.csv")
 
