@@ -201,7 +201,7 @@ Ruslan Kuchakov, [rkuchakov@eu.spb.ru](mailto:rkuchakov@eu.spb.ru)
 - <a href="https://tochno.st/materials/skolko-liudei-stanoviatsia-zertvami-prestuplenii-i-kakaia-cast-prestupnosti-ne-ucityvaetsia-v-oficialnoi-statistike" target="_blank"><img src="figures/tochno_st_logo.png" alt="tochno.st" width="36" height="36"  /></a> Если быть точным, «Сколько людей становятся жертвами преступлений и какая часть преступности не учитывается в официальной статистике» (Май, 2026): https://tochno.st/materials/skolko-liudei-stanoviatsia-zertvami-prestuplenii-i-kakaia-cast-prestupnosti-ne-ucityvaetsia-v-oficialnoi-statistike
 
 ## Further reading
-
+- Кучаков, Серебренников (2026) Что такое жертва? Концептуализация виктимизации в опросах. SocArXiv. [https://doi.org/10.31235/osf.io/k8yz7_v1](https://osf.io/preprints/socarxiv/k8yz7_v1)
 - Серебренников, Титаев (2022) Динамика преступности и виктимизации в России 2018–2021 гг. Результаты второго виктимизационного опроса. ИПП ЕУСПб. [https://enforce.spb.ru/images/rcvs_2021_block_online.pdf](https://enforce.spb.ru/images/rcvs_2021_block_online.pdf)
 - Веркеев, Волков и др. (2019) Как изучать жертв преступлений? Мониторинг общественного мнения: экономические и социальные перемены, 2. [https://doi.org/10.14515/monitoring.2019.2.01](https://www.monitoringjournal.ru/index.php/monitoring/article/view/632) 
 - Титаев (2019) Насильственная преступность в России: жертвы и преступления. ИПП ЕУСПб. [https://enforce.spb.ru/images/official_victimization_online.pdf](https://enforce.spb.ru/images/official_victimization_online.pdf)
